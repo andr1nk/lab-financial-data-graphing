@@ -6,7 +6,12 @@
   </head>
   <body>
     <h1> {{title}} </h1>
-    <p>Welcome to  {{title}} </p>
+    <p>Welcome to {{title}} </p>
+    <input type="date" name="startDate" id="startDate" value="2018-01-01" onchange="handler(event)">
+    <input type="date" name="endDate" id="endDate" value="2019-01-01" onchange="handler(event)">
   </body>
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
 </html>
